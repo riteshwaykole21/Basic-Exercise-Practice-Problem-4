@@ -12,6 +12,7 @@ namespace BasicExercise
         {
             Console.WriteLine("1 : Check HP appears At Second Position");
             Console.WriteLine("2 :  Get A New string");
+            Console.WriteLine("3 : String Index Example");
             Console.WriteLine("Enter A Option");
             int Option = Convert.ToInt32(Console.ReadLine());
             switch (Option)
@@ -28,6 +29,10 @@ namespace BasicExercise
                     numberSum.Number(arr);
                     numberSum.Number(Arr1);
                     numberSum.Number(Arr2);
+                    break;
+                case 3:
+                    stringIndex Demo = new stringIndex();
+                    Demo.Number();
                     break;
             }
             Console.ReadLine();
