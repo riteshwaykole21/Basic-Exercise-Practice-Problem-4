@@ -32,7 +32,7 @@ namespace BasicExercise
                     break;
                 case 3:
                     stringIndex Demo = new stringIndex();
-                    Demo.Number("Ritesh");
+                    Demo.Number();
                     break;
             }
             Console.ReadLine();

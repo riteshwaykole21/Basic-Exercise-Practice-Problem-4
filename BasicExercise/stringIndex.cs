@@ -9,17 +9,17 @@ namespace BasicExercise
 {
     public class stringIndex
     {
-        public void Number(string str) 
+        public void Number() 
         {
-             int middel = str.Length / 2;
-             if (str.Length % 2 == 0)
-             {
-                  Console.WriteLine(str.Substring(middel - 1 ,2));
-             }
-             else
-             {
-                Console.WriteLine(str.Substring(middel , 1));
-             }
+            string Name = "C# Logic Building questions";
+            char[] chars = Name.ToCharArray();   
+            for(int i = Name.Length - 1 ; i >= 0; i--)
+            {
+               // char c = Name[i];
+                Console.Write(Name[i]);
+            }
+            
+
         }
     }
 }
