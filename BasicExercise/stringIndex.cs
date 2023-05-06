@@ -9,15 +9,17 @@ namespace BasicExercise
 {
     public class stringIndex
     {
-        public void Number(string str)   //  Demo.Number("eDaBiTiK");
+        public void Number(string str) 
         {
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (char.IsUpper(str[i]))
-                {
-                    Console.Write(i + " ");
-                }
-            }
+             int middel = str.Length / 2;
+             if (str.Length % 2 == 0)
+             {
+                  Console.WriteLine(str.Substring(middel - 1 ,2));
+             }
+             else
+             {
+                Console.WriteLine(str.Substring(middel , 1));
+             }
         }
     }
 }
