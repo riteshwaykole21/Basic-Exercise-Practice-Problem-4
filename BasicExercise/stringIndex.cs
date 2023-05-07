@@ -9,15 +9,28 @@ namespace BasicExercise
 {
     public class stringIndex
     {
-        public void Number() 
+        public void Number()
         {
-            int[] Number = { 10, 20, 30, 40, 50 };
-            int Sum = 0;
-            for(int i = 0; i < Number.Length;i++)
+            string Duplicate = "";
+            string Name = "Ritesh Nivrutti Waykole";
+            char[] Chars = Name.ToCharArray();
+            char c;
+            int num = 0;
+            for (int i = 0; i < Chars.Length; i++)
             {
-                Sum += Number[i];                
+                for (int j = i + 1; j < Chars.Length; j++)
+                {
+                    if (Chars[i] == Chars[j])
+                    {
+                        if (!Duplicate.Contains(Name[i].ToString()))
+                        {
+                            Duplicate += Name[i];
+                        }
+                    }
+                }
             }
-            Console.WriteLine(Sum);
+            Console.WriteLine(Duplicate);
+
         }
     }
 }
