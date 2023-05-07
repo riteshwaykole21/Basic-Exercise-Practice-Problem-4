@@ -11,15 +11,13 @@ namespace BasicExercise
     {
         public void Number() 
         {
-            string Name = "C# Logic Building questions";
-            char[] chars = Name.ToCharArray();   
-            for(int i = Name.Length - 1 ; i >= 0; i--)
+            int[] Number = { 10, 20, 30, 40, 50 };
+            int Sum = 0;
+            for(int i = 0; i < Number.Length;i++)
             {
-               // char c = Name[i];
-                Console.Write(Name[i]);
+                Sum += Number[i];                
             }
-            
-
+            Console.WriteLine(Sum);
         }
     }
 }
